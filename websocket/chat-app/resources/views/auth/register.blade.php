@@ -44,7 +44,7 @@
 
             <x-text-input id="image" class="block mt-1 w-full"
                             type="file"
-                            name="image" required />
+                            name="image" />
 
             
         </div>

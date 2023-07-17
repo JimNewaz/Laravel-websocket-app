@@ -38,7 +38,7 @@ class RegisteredUserController extends Controller
 
         $imageName = "";
         if($request->image){
-            $imageName = time().'.'. $request->image->extension();
+            $imageName = $request->image;
             $request->image->move(public_path('image'), $imageName);
             $imageName = 'image/'.$imageName;
         }
